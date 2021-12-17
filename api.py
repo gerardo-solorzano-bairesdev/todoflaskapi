@@ -10,7 +10,37 @@ CORS(app)
 
 #with open('data.json') as todos_file:
 #    todos = json.load(todos_file)
-todos = []
+todos = [
+  {
+
+    "id": "1",
+    "body": "Buy a mocaccino",
+    "done": False
+  },
+  {
+  
+    "id": "2",
+    "body": "Cook my dinner",
+    "done": False
+  },
+  {
+
+    "id": "3",
+    "body": "Do exercise",
+    "done": False
+  },
+  {
+ 
+    "id": "4",
+    "body": "Visit Brazil",
+    "done": True
+  },
+  {
+
+    "id": "5",
+    "body": "Learn React",
+    "done": True
+  },]
 
 @app.errorhandler(404)
 def not_found(error):
